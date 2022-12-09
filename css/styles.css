@@ -12,15 +12,45 @@
   --ff-logo: Reylway, sans-serif;
 
   /* || COLORS */
-  --font-color: #212121;
-  --font-color-white: #fff;
+  --font-color-primary: #212121;
+  --font-color-secondary: #fff;
   --font-color-p: #757575;
-  --bgcolor-header: #2f303a;
 
-  /* || LOGO COLORS*/
+  --font-color-contact: #ffffff99;
+  --font-color-street: #fff;
+
+  --font-color-hover: #2196f3;
+
+  /* | LOGO COLORS*/
   --font-color-logo-primary: #2196f3;
   --font-color-logo-secondary-black: #000;
   --font-color-logo-secondary-light: #fff;
+
+  /* | BUTTON COLORS */
+  --font-color-button-primary: #fff;
+
+  --font-color-button-secondary: #212121;
+  --font-color-button-secondary-hover: #fff;
+
+  /* || BACKGROUND */
+  --bgcolor: #fff;
+  --bgcolor-dark: #2f303a;
+  --bgcolor-fade: #f5f4fa;
+
+  /* | BUTTONS BACKGROUND */
+  --bgcolor-button-primary: #fff;
+
+  --bgcolor-button-secondary: #f5f4fa;
+  --bgcolor-button-secondary-hover: #2196f3;
+
+  /* || BORDERS */
+  --border-header: 1px solid #ececec;
+  --border-porfolio-items: 1px solid #eeeeee;
+  --border-header: 1px solid #ececec;
+
+  /* || SHADOWS */
+  --shadow-item: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
 /* || UTILITY CLASSES */
@@ -30,8 +60,9 @@
 
 /* || General styles */
 body {
+  background-color: var(--bgcolor);
   font-family: var(--ff);
-  color: var(--font-color);
+  color: var(--font-color-primary);
 }
 
 /* || HEADER */
