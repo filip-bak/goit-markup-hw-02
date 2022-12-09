@@ -1,10 +1,37 @@
+/* || RESEST */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  color: #212121;
+/* || Variables */
+:root {
+  /* || FONTS */
+  --FF: Roboto, sans-serif;
+  --FF-LOGO: Reylway, sans-serif;
+
+  /* || COLORS */
+  --FONT-COLOR: #212121;
+  --FONT-COLOR-WHITE: #fff;
+  --FONT-COLOR-P: #757575;
+  --FONT-COLOR-LOGO-PRIMARY: #2196f3;
+  --FONT-COLOR-LOGO-SECONDARY-BLACK: #2196f3;
+  --FONT-COLOR-LOGO-SECONDARY-LIGHT: #2196f3;
+  --BGCOLOR-HEADER: #2f303a;
+
+  --COLOR: ;
 }
+
+/* || UTILITY CLASSES */
+.center {
+  text-align: center;
+}
+
+/* || General styles */
+body {
+  font-family: var(--FF);
+  color: var(--FONT-COLOR);
+}
+
+/* || HEADER */
