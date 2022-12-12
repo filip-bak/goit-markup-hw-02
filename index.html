@@ -21,25 +21,31 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Agencja</a>
+            <a class="nav__link link--hover" href="#">Agencja</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="./portfolio.html">Portfolio</a>
+            <a class="nav__link link--hover" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Kontakt</a>
+            <a class="nav__link link--hover" href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
 
       <ul class="contact">
         <li class="contact__item">
-          <a class="contact__link email" href="mailto:info@devstudio.com"
+          <a
+            class="contact__link contact--email link--hover"
+            href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="contact__link telephon" href="tel:48111111111"
+          <a
+            class="contact__link contact--telephone link--hover"
+            href="tel:48111111111"
             >+48 111 111 111</a
           >
         </li>
@@ -52,10 +58,26 @@
         <h1 class="title--primary">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
-        <button class="button-primary" type="button">Zamów usługe</button>
+        <button class="button-primary button--hover" type="button">
+          Zamów usługe
+        </button>
       </section>
 
-      <section class="main__section">
+      <section class="section">
+        <div class="section__item">
+          <h5 class="title--?">LOREM IPSUM</h5>
+          <p class="section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </div>
+        <div class="section__item">
+          <h5 class="title--?">LOREM IPSUM</h5>
+          <p class="section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </p>
+        </div>
         <div class="section__item">
           <h5 class="title--quaternary">LOREM IPSUM</h5>
           <p class="section__paragraph">
@@ -64,21 +86,7 @@
           </p>
         </div>
         <div class="section__item">
-          <h5 class="section__title title--quaternary">LOREM IPSUM</h5>
-          <p class="section__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </p>
-        </div>
-        <div class="section__item">
-          <h5 class="section__title title--quaternary">LOREM IPSUM</h5>
-          <p class="section__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </p>
-        </div>
-        <div class="section__item">
-          <h5 class="section__title title--quaternary">LOREM IPSUM</h5>
+          <h5 class="title--quaternary">LOREM IPSUM</h5>
           <p class="section__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
             arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -87,12 +95,12 @@
       </section>
 
       <!-- What we do -->
-      <section class="main__section">
+      <section class="section">
         <h2 class="title--secondary">Czym się zajmujemy</h2>
         <ul class="section__list list--primary">
           <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--whatwedo"
               src="images/index/working_photos/coding.jpg"
               alt="programista piszę na klawiaturze"
               width="370"
@@ -101,7 +109,7 @@
           </li>
           <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--whatwedo"
               src="images/index/working_photos/color_palette.jpg"
               alt="programista patrzy na szablon strony dla telefonu"
               width="370"
@@ -110,7 +118,7 @@
           </li>
           <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--whatwedo"
               src="images/index/working_photos/layout_page_tel.jpg"
               alt="grafik używa palety kolorów na tablecie"
               width="370"
@@ -121,51 +129,53 @@
       </section>
 
       <!-- Our team -->
-      <section class="main__section">
+      <section class="section">
         <h2 class="title--secondary">Nasz zespół</h2>
         <ul class="section__list list--secondary">
-          <li>
+          <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--ourteam"
               src="images/index/workers/worker_1.jpg"
               alt="Portret pracownika"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
-            <p>Product Designer</p>
+            <h4 class="title--ourteam">John Doe</h4>
+            <p class="section__paragraph paragraph--profession">
+              Product Designer
+            </p>
           </li>
-          <li>
+          <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--ourteam"
               src="images/index/workers/worker_2.jpg"
               alt="Portret pracownika"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
+            <h4 class="title--ourteam">John Doe</h4>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--ourteam"
               src="images/index/workers/worker_3.jpg"
               alt="Portret pracownika"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
+            <h4 class="title--ourteam">John Doe</h4>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="section__item">
             <img
-              class="section__img"
+              class="section__img img--ourteam"
               src="images/index/workers/worker_4.jpg"
               alt="Portret pracownika"
               width="270"
               height="260"
             />
-            <h4>John Doe</h4>
+            <h4 class="title--ourteam">John Doe</h4>
             <p>UI Designer</p>
           </li>
         </ul>
