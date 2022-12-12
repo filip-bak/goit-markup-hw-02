@@ -57,12 +57,34 @@
 .center {
   text-align: center;
 }
+.link--hover:hover {
+  color: var(--font-color-hover);
+}
+
+/* || PSEUDO CLASSES */
+.hover:hover,
+.hover:focus-visible {
+  background-color: var(--bgcolor-button-secondary-hover);
+  color: var(--font-color-button-secondary-hover);
+}
+.link--hover:focus {
+  color: var(--bgcolor-dark);
+}
 
 /* || General styles */
 body {
-  background-color: var(--bgcolor);
   font-family: var(--ff);
   color: var(--font-color-primary);
-}
 
+  background-color: var(--bgcolor);
+}
+/* ul {
+  list-style-type: none;
+} */
 /* || HEADER */
+
+/* || MAIN */
+.button--primary,
+.menu__button {
+  cursor: pointer;
+}
