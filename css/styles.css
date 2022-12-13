@@ -9,7 +9,7 @@
 :root {
   /* || FONTS */
   --ff: Roboto, sans-serif;
-  --ff-logo: Reylway, sans-serif;
+  --ff-logo: Raleway, sans-serif;
 
   /* || COLORS */
   --font-color-primary: #212121;
@@ -27,7 +27,7 @@
   --font-color-logo-secondary-light: #fff;
 
   /* | BUTTON COLORS */
-  --font-color-button-primary: #fff;
+  --font-color-button-primary: #2196f3;
 
   --font-color-button-secondary: #212121;
   --font-color-button-secondary-hover: #fff;
@@ -57,9 +57,6 @@
 .center {
   text-align: center;
 }
-.link--hover:hover {
-  color: var(--font-color-hover);
-}
 
 /* || PSEUDO CLASSES */
 .hover:hover,
@@ -67,8 +64,9 @@
   background-color: var(--bgcolor-button-secondary-hover);
   color: var(--font-color-button-secondary-hover);
 }
+.link--hover:hover,
 .link--hover:focus {
-  color: var(--bgcolor-dark);
+  color: var(--font-color-hover);
 }
 
 /* || General styles */
@@ -85,12 +83,28 @@ body {
 /* || HEADER */
 
 /* | LOGO */
-.logo-primary {
+.logo {
+  font-family: var(--ff-logo);
+  text-decoration: none;
 }
-.logo-secondary {
+.logo--primary {
+  color: var(--font-color-logo-primary);
+}
+.logo--secondary {
+  color: var(--font-color-logo-secondary-black);
 }
 
 /* || MAIN */
+
+/* | BUTTONS */
+.button--primary {
+  color: var(--font-color-button-primary);
+  background-color: var(--bgcolor-button-primary);
+
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
 .button--primary,
 .menu__button {
   cursor: pointer;
