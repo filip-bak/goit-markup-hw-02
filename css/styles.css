@@ -81,7 +81,14 @@ body {
 /* ul {
   list-style-type: none;
 } */
+
 /* || HEADER */
+
+/* | LOGO */
+.logo-primary {
+}
+.logo-secondary {
+}
 
 /* || MAIN */
 .button--primary,
