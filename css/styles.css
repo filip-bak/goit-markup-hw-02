@@ -10,13 +10,15 @@
   /* || FONTS */
   --ff: Roboto, sans-serif;
   --ff-logo: Raleway, sans-serif;
+  --fs: 16px;
 
   /* || COLORS */
   --font-color-primary: #212121;
   --font-color-secondary: #fff;
   --font-color-p: #757575;
 
-  --font-color-contact: #ffffff99;
+  --font-color-contact-primary: #757575;
+  --font-color-contact-secondary: #ffffff99;
   --font-color-street: #fff;
 
   --font-color-hover: #2196f3;
@@ -27,7 +29,7 @@
   --font-color-logo-secondary-light: #fff;
 
   /* | BUTTON COLORS */
-  --font-color-button-primary: #2196f3;
+  --font-color-button-primary: #fff;
 
   --font-color-button-secondary: #212121;
   --font-color-button-secondary-hover: #fff;
@@ -38,7 +40,7 @@
   --bgcolor-fade: #f5f4fa;
 
   /* | BUTTONS BACKGROUND */
-  --bgcolor-button-primary: #fff;
+  --bgcolor-button-primary: #2196f3;
 
   --bgcolor-button-secondary: #f5f4fa;
   --bgcolor-button-secondary-hover: #2196f3;
@@ -58,6 +60,203 @@
   text-align: center;
 }
 
+/* Trzeba usunąć wszędzie margin */
+
+/* || General styles */
+body {
+  margin: 0 auto;
+  width: 1600px;
+
+  font-family: var(--ff);
+  font-size: var(--fs);
+  color: var(--font-color-primary);
+
+  background-color: var(--bgcolor);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* || HEADER */
+
+/* | LOGO */
+.logo {
+  font-family: var(--ff-logo);
+  text-decoration: none;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo--primary {
+  color: var(--font-color-logo-primary);
+}
+.logo--secondary {
+  color: var(--font-color-logo-secondary-black);
+}
+
+/* | NAVIGATION */
+.nav__link,
+.contact__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.nav__link {
+  color: inherit;
+}
+.contact__link {
+  color: var(--font-color-contact-primary);
+}
+/* || MAIN */
+.banner {
+  /* for now */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* ---------- */
+
+  margin-bottom: 94px;
+  height: 600px;
+
+  color: var(--font-color-secondary);
+  text-align: center;
+
+  background-color: var(--bgcolor-dark);
+}
+.title--primary {
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+}
+
+/* | SKILLS */
+.skill__title {
+  margin-bottom: 10px;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+.skill__description {
+  color: var(--font-color-p);
+  font-size: 0.875rem;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.title--secondary {
+  margin-bottom: 50px;
+
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+/* | ABOUT US */
+
+/* | TEAM */
+/* Trzena usunąć marginy z <p> */
+.team {
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor-fade);
+}
+.team__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bgcolor);
+}
+.team__img {
+  margin-bottom: 30px;
+}
+.team__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.team__profession {
+  color: var(--font-color-p);
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+/* || FOOTER */
+footer {
+  height: 252px;
+  background-color: var(--bgcolor-dark);
+  display: flex;
+  flex-direction: column;
+}
+.footer .logo {
+  margin-top: 60px;
+}
+.footer .logo--secondary {
+  color: var(--font-color-logo-secondary-light);
+}
+address {
+  margin-top: 20px;
+}
+.footer .logo,
+.address {
+  margin-left: 215px;
+}
+
+.address__list {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.address__link {
+  color: var(--font-color-contact-secondary);
+}
+.address__street {
+  color: var(--font-color-street);
+}
+
+/* | BUTTONS */
+.button--primary {
+  /* box model */
+  padding: 16px 39px;
+
+  /* type */
+  color: var(--font-color-button-primary);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  /* visual */
+  border: none;
+  border-radius: 4px;
+  background-color: var(--bgcolor-button-primary);
+}
+.button--primary,
+.menu__button {
+  cursor: pointer;
+}
+
 /* || PSEUDO CLASSES */
 .hover:hover,
 .hover:focus-visible {
@@ -67,45 +266,4 @@
 .link--hover:hover,
 .link--hover:focus {
   color: var(--font-color-hover);
-}
-
-/* || General styles */
-body {
-  font-family: var(--ff);
-  color: var(--font-color-primary);
-
-  background-color: var(--bgcolor);
-}
-/* ul {
-  list-style-type: none;
-} */
-
-/* || HEADER */
-
-/* | LOGO */
-.logo {
-  font-family: var(--ff-logo);
-  text-decoration: none;
-}
-.logo--primary {
-  color: var(--font-color-logo-primary);
-}
-.logo--secondary {
-  color: var(--font-color-logo-secondary-black);
-}
-
-/* || MAIN */
-
-/* | BUTTONS */
-.button--primary {
-  color: var(--font-color-button-primary);
-  background-color: var(--bgcolor-button-primary);
-
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-}
-.button--primary,
-.menu__button {
-  cursor: pointer;
 }
