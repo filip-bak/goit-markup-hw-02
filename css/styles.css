@@ -42,6 +42,7 @@
 
   /* | BUTTONS BACKGROUND */
   --bgcolor-button-primary: #2196f3;
+  --bgcolor-button-primary-hover: #1076c9;
 
   --bgcolor-button-secondary: #f5f4fa;
   --bgcolor-button-secondary-hover: #2196f3;
@@ -75,7 +76,10 @@
 
   box-shadow: var(--shadow-button-menu-hover);
 }
-
+.banner__button:hover,
+.banner__button:focus-visible {
+  background-color: var(--bgcolor-button-primary-hover);
+}
 .link--hover:hover,
 .link--hover:focus {
   color: var(--font-color-hover);
