@@ -108,10 +108,11 @@ body {
 } */
 
 /* || HEADER */
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
   height: 80px;
 
   border-bottom: var(--border-header);
@@ -282,7 +283,7 @@ header {
 .footer .logo--secondary {
   color: var(--font-color-logo-secondary-light);
 }
-address {
+.address {
   margin-top: 20px;
 }
 .footer .logo,
